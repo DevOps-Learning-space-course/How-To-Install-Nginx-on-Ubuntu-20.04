@@ -23,3 +23,21 @@
 <h4>sudo systemctl enable nginx</h4>
 
 <h4>sudo systemctl disable nginx</h4>
+
+sudo mkdir -p /var/www/your_domain/html
+
+sudo chown -R $USER:$USER /var/www/your_domain/html
+
+sudo chmod -R 755 /var/www/your_domain
+
+sudo nano /var/www/your_domain/html/index.html
+
+sudo nano /etc/nginx/sites-available/your_domain
+
+sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+
+sudo nano /etc/nginx/nginx.conf
+
+sudo nginx -t
+
+sudo systemctl restart nginx
