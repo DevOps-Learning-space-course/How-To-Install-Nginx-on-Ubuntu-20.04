@@ -20,6 +20,6 @@
 
 <h4>sudo systemctl restart nginx</h4>
 
-<h4>sudo systemctl disable nginx</h4>
+<h4>sudo systemctl enable nginx</h4>
 
 <h4>sudo systemctl disable nginx</h4>
